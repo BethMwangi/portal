@@ -16,7 +16,7 @@ class User(AbstractUser):
 
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-    email = models.CharField(max_length=10, blank=True, unique=True)
+    email = models.CharField(max_length=10, blank=True)
 
 class Course(models.Model):
     CATEGORIES = (

@@ -14,4 +14,4 @@ build/
 tests/report/
 
 
-env/
+venv/

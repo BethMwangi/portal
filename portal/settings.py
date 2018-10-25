@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'classroom'
+    'classroom',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +94,17 @@ DATABASES = {
     }
 }
 
+
+
 AUTH_USER_MODEL = 'classroom.User'
+
+LOGIN_URL = 'login'
+
+LOGOUT_URL = 'logout'
+
+LOGIN_REDIRECT_URL = 'home'
+
+LOGOUT_REDIRECT_URL = 'home'
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

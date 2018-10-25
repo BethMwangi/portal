@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome <span class="icon-emo-happy"></span></h2>
+<p class="lead">
+    Already have an account, Kindly <a href="{% url 'login' %}">log in</a>.
+</p>
+<hr>
+<p>
+    Not registered?
+    ceate a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">admin
+        account</a>.</p>
+
+{% endblock %}
